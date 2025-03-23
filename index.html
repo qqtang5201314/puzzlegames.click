@@ -3,83 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puzzle Games - Challenge Your Mind with Amazing Puzzles</title>
-    <meta name="description" content="Play UnpuzzleX, an addictive and relaxing puzzle game that will challenge your mind. Perfect for puzzle lovers of all ages.">
+    <title>Puzzle Games - Challenge Your Mind with Amazing Brain Teasers</title>
+    <meta name="description" content="Play the most engaging online puzzle games. Challenge yourself with our collection of brain teasers and strategic puzzles. Perfect for all ages and skill levels.">
     <link rel="canonical" href="https://puzzlegames.click" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --apple-blue: #007AFF;
-            --apple-gray: #8E8E93;
-            --apple-background: #F5F5F7;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            red: '#FF3B30',
+                            green: '#34C759',
+                            purple: '#AF52DE',
+                            yellow: '#FFCC00',
+                            orange: '#FF9500',
+                            dark: '#1C1C1E',
+                            gray: '#8E8E93',
+                            lightgray: '#F2F2F7'
+                        }
+                    }
+                }
+            }
         }
-        
-        body {
-            background-color: var(--apple-background);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    </script>
+    <style type="text/css">
+        @media (max-width: 640px) {
+            .game-container {
+                height: 70vh;
+            }
         }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     </style>
 </head>
-<body>
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                UnpuzzleX - A Mind-Bending Puzzle Adventure
-            </h1>
-            <p class="text-xl text-gray-600 mb-8">
-                Discover the art of puzzle-solving in this minimalist and engaging brain teaser
-            </p>
-        </header>
+<body class="bg-gray-50 font-['Inter']">
+    <header class="bg-gradient-to-r from-blue-500 to-blue-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-4">Puzzle Games</h1>
+            <p class="text-xl text-center text-blue-100">Challenge Your Mind with Engaging Brain Teasers</p>
+        </div>
+    </header>
 
-        <main>
-            <div class="bg-white rounded-xl shadow-lg p-4 mb-8">
-                <div class="aspect-w-16 aspect-h-9 mb-6">
-                    <iframe 
-                        src="https://www.kongregate.com/games/KekGames/unpuzzlex.html"
-                        class="w-full h-[600px] rounded-lg"
-                        frameborder="0"
-                        allowfullscreen>
-                    </iframe>
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">Featured Game: UnpuzzleX</h2>
+            <div class="w-full aspect-video bg-white rounded-lg shadow-lg overflow-hidden">
+                <iframe 
+                    src="https://www.kongregate.com/games/KekGames/unpuzzlex.html"
+                    class="w-full h-full border-0"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Game Description</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    UnpuzzleX is an innovative puzzle game that challenges your spatial reasoning and problem-solving abilities. With its intuitive mechanics and progressively challenging levels, this game provides hours of entertainment while exercising your brain.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">How to Play</h2>
+                <ul class="text-gray-600 space-y-2">
+                    <li>• Use your mouse or touch controls to manipulate puzzle pieces</li>
+                    <li>• Solve increasingly complex puzzles</li>
+                    <li>• Think strategically to find the optimal solution</li>
+                    <li>• Complete levels to unlock new challenges</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-blue-50 rounded-xl p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Why Play UnpuzzleX?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Brain Training</h3>
+                    <p class="text-gray-600">Enhance your cognitive skills and problem-solving abilities</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Relaxing</h3>
+                    <p class="text-gray-600">Enjoy a stress-free gaming experience with smooth gameplay</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">Challenging</h3>
+                    <p class="text-gray-600">Test your skills with progressively difficult levels</p>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <section class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                        Game Features
-                    </h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Minimalist design with intuitive controls</li>
-                        <li>Progressive difficulty levels</li>
-                        <li>Relaxing gameplay experience</li>
-                        <li>Perfect for both casual and hardcore players</li>
-                    </ul>
-                </div>
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 PuzzleGames.click - All rights reserved</p>
+        </div>
+    </footer>
 
-                <div class="bg-white rounded-xl p-6 shadow-md">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                        How to Play
-                    </h2>
-                    <p class="text-gray-700">
-                        UnpuzzleX is a unique puzzle game where you need to solve increasingly challenging puzzles using logic and creativity. Click and drag pieces to solve each level. The game features a clean, minimalist design that helps you focus on the puzzles themselves.
-                    </p>
-                </div>
-            </section>
-
-            <section class="bg-white rounded-xl p-6 shadow-md mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                    Why Players Love UnpuzzleX
-                </h2>
-                <div class="text-gray-700 space-y-4">
-                    <p>With its 4.5/5 rating from over 9,000 players, UnpuzzleX has proven to be one of the most engaging puzzle games available online. The game combines simple mechanics with challenging puzzles that will keep you entertained for hours.</p>
-                    <p>Whether you're a casual player looking for a relaxing experience or a puzzle enthusiast seeking a challenge, UnpuzzleX offers something for everyone.</p>
-                </div>
-            </section>
-        </main>
-
-        <footer class="text-center text-gray-600 text-sm">
-            <p>&copy; 2024 puzzlegames.click - Your destination for the best online puzzle games</p>
-        </footer>
-    </div>
+    <!-- JSON-LD structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Puzzle Games",
+        "description": "Puzzle-Games.",
+        "genre": ["Action", "Roguelike", "Survival"],
+        "playMode": "SinglePlayer",
+        "applicationCategory": "Game",
+        "url": "https://puzzlegames.click",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
 </body>
 </html>
